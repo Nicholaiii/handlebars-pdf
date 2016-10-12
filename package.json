@@ -1,6 +1,6 @@
 {
   "name": "handlebars-pdf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Render PDF from Handlebars!",
   "main": "index.js",
   "scripts": {
