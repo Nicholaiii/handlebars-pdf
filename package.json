@@ -14,7 +14,8 @@
   "homepage": "https://www.npmjs.com/package/handlebars-pdf",
   "dependencies": {
     "handlebars": "4.0.5",
-    "html-pdf": "2.1.0"
+    "html-pdf": "2.1.0",
+    "lodash.defaults": "4.2.0"
   },
   "repository": {
     "type": "git",

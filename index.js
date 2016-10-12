@@ -2,7 +2,7 @@
 
 let Handlebars = require('handlebars'),
     htmlpdf = require('html-pdf'),
-    defaults = require('lodash').defaults,
+    defaults = require('lodash.defaults'),
     defaultoptions = {
         "format": "A4",
         "orientation": "portrait",
@@ -13,8 +13,9 @@ module.exports = {}
 module.exports.create = (document) => {
     /* Set default layout if none was supplied */
     var options = defaults(document.options, defaultoptions)
-        /* Compile handlebars template */
-        /* Create promise and return it! */
+
+    /* Compile handlebars template */
+    /* Create promise and return it! */
     return new Promise((resolve, reject) => {
 
         /* Check options have been supplied correctly.
