@@ -16,7 +16,7 @@ let document = {
         path: "./test-"+Math.random()+".pdf"
     }
 
-pdf.create(document)
+PDF.create(document)
     .then(res => {
         console.log(res)
     })
