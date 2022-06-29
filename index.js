@@ -1,6 +1,9 @@
 'use strict'
 
-let Handlebars = require('handlebars'),
+let handlebars = require('handlebars'),
+    Handlebars = require('handlebars-helpers')({
+        handlebars: handlebars
+    }),
     htmlpdf = require('html-pdf'),
     defaults = require('lodash.defaults'),
     defaultoptions = {
@@ -10,6 +13,8 @@ let Handlebars = require('handlebars'),
     }
 
 module.exports = {}
+
+
 module.exports.create = (document) => {
     /* Set default layout if none was supplied */
     var options = defaults(document.options, defaultoptions)
